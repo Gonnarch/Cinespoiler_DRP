@@ -32,6 +32,22 @@ Actualmente el sistema permite:
 
 ---
 
+## 🖼️ Capturas del proyecto
+
+### API Root
+![API Root](docs/incio.png)
+
+### Formulario de registro de películas
+![Formulario de registro](docs/movie_list_post.png)
+
+### Edicion de peliculas
+![Formulario de edicion](docs/movie_delete.png)
+
+### Listado de películas
+![Listado de películas](docs/movie_list.png)
+
+---
+
 ## 📂 Estructura principal del proyecto
 
 ```bash
