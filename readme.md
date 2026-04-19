@@ -1,34 +1,35 @@
 # 🎬 Cinespoiler API
 
-API REST desarrollada con **Django** y **Django REST Framework** para la gestión básica de películas en un sistema de cine.  
-El proyecto sigue una estructura simple, limpia y escalable, pensada como base para seguir creciendo con nuevos módulos y funcionalidades.
+**Cinespoiler API** es una API REST desarrollada con **Django** y **Django REST Framework** para la gestión de películas dentro de un sistema de cine.
+
+El proyecto fue construido con una estructura clara, limpia y escalable, sirviendo como una base sólida para futuras mejoras y la incorporación de nuevos módulos.
 
 ---
 
-## 📖 Descripción
+## 📖 Descripción del proyecto
 
-**Cinespoiler API** es un backend que permite administrar películas mediante operaciones CRUD.
+Esta API permite realizar operaciones CRUD sobre películas, facilitando su administración desde distintos puntos del sistema.
 
-Actualmente el sistema permite:
+Entre sus funcionalidades principales se encuentran:
 
-- registrar películas
-- listar películas
-- consultar el detalle de una película
-- actualizar películas
-- eliminar películas
-- gestionar registros desde Django Admin
-- consumir la API desde la interfaz navegable de Django REST Framework
+- Registrar nuevas películas
+- Listar todas las películas registradas
+- Consultar el detalle de una película específica
+- Actualizar información de películas existentes
+- Eliminar películas
+- Gestionar registros desde el panel de **Django Admin**
+- Consumir los endpoints desde la interfaz navegable de **Django REST Framework**
 
 ---
 
 ## 🚀 Tecnologías utilizadas
 
-- Python
-- Django
-- Django REST Framework
-- SQLite
-- Git
-- GitHub
+- **Python**
+- **Django**
+- **Django REST Framework**
+- **SQLite**
+- **Git**
+- **GitHub**
 
 ---
 
@@ -40,11 +41,14 @@ Actualmente el sistema permite:
 ### Formulario de registro de películas
 ![Formulario de registro](docs/movie_list_post.png)
 
-### Edicion de peliculas
-![Formulario de edicion](docs/movie_delete.png)
+### Edición de películas
+![Formulario de edición](docs/movie_delete.png)
 
 ### Listado de películas
 ![Listado de películas](docs/movie_list.png)
+
+### Listado de películas en formato JSON
+![Listado JSON](docs/json.png)
 
 ---
 
