@@ -1,28 +1,71 @@
 # 🎬 Cinespoiler API
 
-**Cinespoiler API** es una API REST desarrollada con **Django** y **Django REST Framework** para la gestión de películas dentro de un sistema de cine.
+**Cinespoiler API** es una API REST desarrollada con **Django** y **Django REST Framework** para la gestión de películas en un sistema de cine.
 
-El proyecto fue construido con una estructura clara, limpia y escalable, sirviendo como una base sólida para futuras mejoras y la incorporación de nuevos módulos.
+Este proyecto fue diseñado bajo una estructura clara, organizada y escalable, permitiendo administrar registros de películas mediante operaciones CRUD, integrar el panel administrativo de Django y consumir los recursos desde la interfaz navegable del framework.
+
+Su desarrollo tiene como objetivo aplicar buenas prácticas en la construcción de servicios backend, manteniendo un código limpio, modular y fácil de mantener.
 
 ---
 
-## 📖 Descripción del proyecto
+## 📌 Tabla de contenido
 
-Esta API permite realizar operaciones CRUD sobre películas, facilitando su administración desde distintos puntos del sistema.
+- [Descripción general](#-descripción-general)
+- [Objetivos del proyecto](#-objetivos-del-proyecto)
+- [Funcionalidades principales](#-funcionalidades-principales)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [Capturas del proyecto](#-capturas-del-proyecto)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Arquitectura general](#-arquitectura-general)
+- [Instalación y ejecución](#-instalación-y-ejecución)
+- [Estado actual](#-estado-actual)
+- [Posibles mejoras](#-posibles-mejoras)
+- [Autor](#-autor)
 
-Entre sus funcionalidades principales se encuentran:
+---
+
+## 📖 Descripción general
+
+**Cinespoiler API** es una solución backend enfocada en la administración de películas dentro de un entorno tipo cine.  
+Permite registrar, consultar, actualizar y eliminar películas mediante endpoints REST, facilitando la gestión de la información desde distintos puntos del sistema.
+
+Además, el proyecto incorpora el uso del panel de administración de Django, lo que permite realizar tareas de mantenimiento y gestión de registros de manera rápida y visual.
+
+Gracias a Django REST Framework, también es posible probar los endpoints desde una interfaz navegable, haciendo más simple el proceso de desarrollo, validación y demostración del funcionamiento de la API.
+
+---
+
+## 🎯 Objetivos del proyecto
+
+Los principales objetivos de este proyecto son:
+
+- Desarrollar una API REST funcional utilizando **Django** y **Django REST Framework**
+- Aplicar operaciones **CRUD** sobre una entidad principal
+- Implementar una estructura de proyecto ordenada y reutilizable
+- Utilizar serializadores para transformar datos entre objetos y JSON
+- Gestionar datos desde el panel administrativo de Django
+- Sentar una base sólida para futuras ampliaciones del sistema
+
+---
+
+## ⚙️ Funcionalidades principales
+
+Actualmente, el sistema permite:
 
 - Registrar nuevas películas
-- Listar todas las películas registradas
+- Listar todas las películas disponibles
 - Consultar el detalle de una película específica
-- Actualizar información de películas existentes
-- Eliminar películas
-- Gestionar registros desde el panel de **Django Admin**
-- Consumir los endpoints desde la interfaz navegable de **Django REST Framework**
+- Editar información de películas existentes
+- Eliminar registros de películas
+- Gestionar datos desde el panel de administración
+- Consumir la API desde la interfaz navegable de Django REST Framework
+- Obtener respuestas en formato JSON
 
 ---
 
 ## 🚀 Tecnologías utilizadas
+
+Este proyecto fue desarrollado con las siguientes tecnologías:
 
 - **Python**
 - **Django**
@@ -35,24 +78,29 @@ Entre sus funcionalidades principales se encuentran:
 
 ## 🖼️ Capturas del proyecto
 
+A continuación, se muestran algunas capturas que evidencian el funcionamiento del sistema:
+
 ### API Root
 ![API Root](docs/incio.png)
 
-### Formulario de registro de películas
-![Formulario de registro](docs/movie_list_post.png)
+### Registro de películas
+![Registro de películas](docs/movie_list_post.png)
 
 ### Edición de películas
-![Formulario de edición](docs/movie_delete.png)
+![Edición de películas](docs/movie_delete.png)
 
 ### Listado de películas
 ![Listado de películas](docs/movie_list.png)
 
-### Listado de películas en formato JSON
-![Listado JSON](docs/json.png)
+### Respuesta de la API en formato JSON
+![Respuesta JSON](docs/json.png)
+
+### Panel de administración
+![Panel de administración](docs/admin.png)
 
 ---
 
-## 📂 Estructura principal del proyecto
+## 📂 Estructura del proyecto
 
 ```bash
 Cinespoiler/
