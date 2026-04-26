@@ -202,3 +202,43 @@ Permite consultar la información de una película específica.
 
 ![Detalle de Movie](docs/endpoints/movie%20intace.png)
 
+# Eduardo Quiquia - Evidencias
+
+## Listar peliculas
+** Ruta: GET /api/movies/
+![GET movie](docs/eduardo/image.png)
+
+## Crear pelicula
+**Ruta: POST /api/movies/
+![POST movie](docs/eduardo/moviegk.png)
+
+## Actualizar pelicula
+**Ruta: PUT /api/movies/4
+![PUT movie](docs/eduardo/updategk.png)
+
+## Eliminar pelicula
+**Ruta: DELETE /api/movies/4
+![DELETE movie](docs/eduardo/deletegk.png)
+
+## Data Base - MOVIES
+![TABLA MOVIES](docs/eduardo/db_movies.png)
+
+## Listar genres
+** Ruta: GET /api/genres/
+![GET genres](docs/eduardo/genres.png)
+
+## Crear genres
+**Ruta: POST /api/genres/
+![POST genres](docs/eduardo/genre1.png)
+![POST genres](docs/eduardo/genre2.png)
+
+## Actualizar genre
+**Ruta: PUT /api/genres/1
+![PUT genre](docs/eduardo/genret.png)
+
+## Eliminar genre
+**Ruta: DELETE /api/genres/1
+![DELETE movie](docs/eduardo/genredelete.png)
+
+## Data Base - MOVIES
+![TABLA GENRES](docs/eduardo/db_genres.png)
