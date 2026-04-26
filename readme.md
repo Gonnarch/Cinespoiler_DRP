@@ -84,7 +84,11 @@ Este proyecto fue desarrollado con las siguientes tecnologías:
 
 ## 🖼️ Capturas del proyecto
 
+
 A continuación, se muestran capturas del funcionamiento del sistema.
+
+
+## Carlos Carbajal
 
 ### Panel de administración
 
