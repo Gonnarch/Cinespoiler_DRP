@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Movie, Genre
 
 
-# NUEVO
+
 @admin.register(Genre)
 class GenreAdmin(admin.ModelAdmin):
     list_display = ("id", "name")
@@ -14,4 +14,4 @@ class MovieAdmin(admin.ModelAdmin):
     list_display = ("id", "title", "release_date", "duration_minutes")
     search_fields = ("title",)
     list_filter = ("genres",)
-    filter_horizontal = ("genres",)  # NUEVO
+    filter_horizontal = ("genres",)  

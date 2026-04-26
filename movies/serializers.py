@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Movie, Genre
 
 
-# NUEVO
+
 class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
@@ -13,10 +13,10 @@ class GenreSerializer(serializers.ModelSerializer):
 
 
 class MovieSerializer(serializers.ModelSerializer):
-    # NUEVO
+ 
     genres = GenreSerializer(many=True, read_only=True)
 
-    # NUEVO
+
     genre_ids = serializers.PrimaryKeyRelatedField(
         queryset=Genre.objects.all(),
         many=True,

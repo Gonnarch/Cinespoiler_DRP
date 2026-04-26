@@ -6,7 +6,7 @@ from .views import MovieViewSet, GenreViewSet
 router = DefaultRouter()
 router.register(r"movies", MovieViewSet, basename="movie")
 
-# NUEVO
+
 router.register(r"genres", GenreViewSet, basename="genre")
 
 
