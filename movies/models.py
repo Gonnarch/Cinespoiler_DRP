@@ -20,7 +20,7 @@ class Movie(models.Model):
     release_date = models.DateField(null=True, blank=True)
     duration_minutes = models.PositiveIntegerField(null=True, blank=True)
 
-    # NUEVO
+   
     genres = models.ManyToManyField(
         Genre,
         related_name="movies",

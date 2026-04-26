@@ -1,0 +1,3 @@
+[submodule "cine-infinito"]
+	path = cine-infinito
+	url = https://github.com/eduardoquiquia/CineSpoilers.git

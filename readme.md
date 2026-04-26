@@ -4,7 +4,9 @@
 
 El proyecto permite administrar películas, registrar géneros cinematográficos y relacionar una película con varios géneros mediante una relación muchos a muchos.
 
-Además, cuenta con el panel administrativo de Django y la interfaz navegable de Django REST Framework para probar los endpoints de forma visual.
+Además, cuenta con el panel administrativo de Django y con la interfaz navegable de Django REST Framework para probar los endpoints de forma visual.
+
+> Proyecto colaborativo **Carlos Carbajal**, **Sarai Soto** y **Eduardo Quiquia**
 
 ---
 
@@ -16,6 +18,8 @@ Además, cuenta con el panel administrativo de Django y la interfaz navegable de
 - [Tecnologías utilizadas](#-tecnologías-utilizadas)
 - [Capturas del proyecto](#-capturas-del-proyecto)
 - [Endpoints principales](#-endpoints-principales)
+- [Evidencias de endpoints](#-evidencias-de-endpoints)
+- [Ejemplos de uso](#-ejemplos-de-uso)
 - [Estructura del proyecto](#-estructura-del-proyecto)
 - [Instalación y ejecución](#-instalación-y-ejecución)
 - [Estado actual](#-estado-actual)
@@ -28,7 +32,7 @@ Además, cuenta con el panel administrativo de Django y la interfaz navegable de
 
 **Cinespoilers API** es una solución backend enfocada en la administración de películas dentro de un sistema de cine.
 
-Permite registrar, consultar, actualizar y eliminar películas mediante endpoints REST. También permite registrar géneros como acción, drama, terror o comedia, y asociarlos a una o varias películas.
+Permite registrar, consultar, actualizar y eliminar películas mediante endpoints REST. También permite registrar géneros cinematográficos como acción, drama, terror o comedia, y asociarlos a una o varias películas.
 
 El proyecto utiliza **Django REST Framework**, lo que facilita la creación de una API limpia, ordenada y fácil de probar desde el navegador.
 
@@ -84,11 +88,9 @@ Este proyecto fue desarrollado con las siguientes tecnologías:
 
 ## 🖼️ Capturas del proyecto
 
+A continuación, se muestran capturas del funcionamiento en diferentes perspectivas.
 
-A continuación, se muestran capturas del funcionamiento del sistema.
-
-
-## Carlos Carbajal
+## Carlos Carbajal 
 
 ### Panel de administración
 
@@ -120,35 +122,53 @@ A continuación, se muestran capturas del funcionamiento del sistema.
 
 ---
 
-## 🔗 Endpoints principales
+## 🖼️ Evidencias de endpoints
 
-### Movies
+En esta sección se muestran las capturas de las pruebas realizadas en los endpoints de la API.
 
-| Método | Endpoint | Descripción |
-|---|---|---|
-| GET | `/api/movies/` | Lista todas las películas |
-| POST | `/api/movies/` | Crea una nueva película |
-| GET | `/api/movies/{id}/` | Muestra el detalle de una película |
-| PUT | `/api/movies/{id}/` | Actualiza una película completa |
-| PATCH | `/api/movies/{id}/` | Actualiza parcialmente una película |
-| DELETE | `/api/movies/{id}/` | Elimina una película |
+### 1. POST Genre
 
-### Genres
+Permite crear un nuevo género.
 
-| Método | Endpoint | Descripción |
-|---|---|---|
-| GET | `/api/genres/` | Lista todos los géneros |
-| POST | `/api/genres/` | Crea un nuevo género |
-| GET | `/api/genres/{id}/` | Muestra el detalle de un género |
-| PUT | `/api/genres/{id}/` | Actualiza un género completo |
-| PATCH | `/api/genres/{id}/` | Actualiza parcialmente un género |
-| DELETE | `/api/genres/{id}/` | Elimina un género |
+![POST Genre](docs/endpoints/post%20genre.png)
 
 ---
 
-## 📌 Ejemplo de creación de género
+### 2. GET Movie con relación de géneros
 
-Endpoint:
+Permite visualizar una película junto con sus géneros relacionados.
 
-```http
-POST /api/genres/
+![GET Movie con relación](docs/endpoints/get%20movie%20relacion.png)
+
+---
+
+### 3. POST Movie
+
+Permite crear una nueva película y relacionarla con géneros existentes.
+
+![POST Movie](docs/endpoints/post%20movie.png)
+
+---
+
+### 4. GET Movie
+
+Permite listar las películas registradas.
+
+![GET Movie](docs/endpoints/get%20movie.png)
+
+---
+
+### 5. PUT Movie
+
+Permite actualizar completamente la información de una película.
+
+![PUT Movie](docs/endpoints/put%20movie.png)
+
+---
+
+### 6. Detalle de Movie
+
+Permite consultar la información de una película específica.
+
+![Detalle de Movie](docs/endpoints/movie%20intace.png)
+
