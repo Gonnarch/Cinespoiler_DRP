@@ -1,10 +1,10 @@
-# 🎬 Cinespoilers API
+# 🎬 Cinespoiler API
 
-**Cinespoilers API** es una API REST desarrollada con **Django** y **Django REST Framework** para la gestión de películas y géneros en un sistema de cine.
+**Cinespoiler API** es una API REST desarrollada con **Django** y **Django REST Framework** para la gestión de películas en un sistema de cine.
 
-El proyecto permite administrar películas, registrar géneros cinematográficos y relacionar una película con varios géneros mediante una relación muchos a muchos.
+Este proyecto fue diseñado bajo una estructura clara, organizada y escalable, permitiendo administrar registros de películas mediante operaciones CRUD, integrar el panel administrativo de Django y consumir los recursos desde la interfaz navegable del framework.
 
-Además, cuenta con el panel administrativo de Django y la interfaz navegable de Django REST Framework para probar los endpoints de forma visual.
+Su desarrollo tiene como objetivo aplicar buenas prácticas en la construcción de servicios backend, manteniendo un código limpio, modular y fácil de mantener.
 
 ---
 
@@ -15,8 +15,8 @@ Además, cuenta con el panel administrativo de Django y la interfaz navegable de
 - [Funcionalidades principales](#-funcionalidades-principales)
 - [Tecnologías utilizadas](#-tecnologías-utilizadas)
 - [Capturas del proyecto](#-capturas-del-proyecto)
-- [Endpoints principales](#-endpoints-principales)
 - [Estructura del proyecto](#-estructura-del-proyecto)
+- [Arquitectura general](#-arquitectura-general)
 - [Instalación y ejecución](#-instalación-y-ejecución)
 - [Estado actual](#-estado-actual)
 - [Posibles mejoras](#-posibles-mejoras)
@@ -26,11 +26,12 @@ Además, cuenta con el panel administrativo de Django y la interfaz navegable de
 
 ## 📖 Descripción general
 
-**Cinespoilers API** es una solución backend enfocada en la administración de películas dentro de un sistema de cine.
+**Cinespoiler API** es una solución backend enfocada en la administración de películas dentro de un entorno tipo cine.  
+Permite registrar, consultar, actualizar y eliminar películas mediante endpoints REST, facilitando la gestión de la información desde distintos puntos del sistema.
 
-Permite registrar, consultar, actualizar y eliminar películas mediante endpoints REST. También permite registrar géneros como acción, drama, terror o comedia, y asociarlos a una o varias películas.
+Además, el proyecto incorpora el uso del panel de administración de Django, lo que permite realizar tareas de mantenimiento y gestión de registros de manera rápida y visual.
 
-El proyecto utiliza **Django REST Framework**, lo que facilita la creación de una API limpia, ordenada y fácil de probar desde el navegador.
+Gracias a Django REST Framework, también es posible probar los endpoints desde una interfaz navegable, haciendo más simple el proceso de desarrollo, validación y demostración del funcionamiento de la API.
 
 ---
 
@@ -38,14 +39,12 @@ El proyecto utiliza **Django REST Framework**, lo que facilita la creación de u
 
 Los principales objetivos de este proyecto son:
 
-- Desarrollar una API REST funcional usando Django y Django REST Framework.
-- Aplicar operaciones CRUD sobre películas.
-- Crear una entidad `Genre` para administrar géneros.
-- Relacionar `Movie` y `Genre` mediante una relación muchos a muchos.
-- Utilizar serializers para transformar datos entre objetos Python y JSON.
-- Gestionar datos desde el panel administrativo de Django.
-- Probar los endpoints desde la Browsable API.
-- Mantener una base simple y ordenada para futuras mejoras.
+- Desarrollar una API REST funcional utilizando **Django** y **Django REST Framework**
+- Aplicar operaciones **CRUD** sobre una entidad principal
+- Implementar una estructura de proyecto ordenada y reutilizable
+- Utilizar serializadores para transformar datos entre objetos y JSON
+- Gestionar datos desde el panel administrativo de Django
+- Sentar una base sólida para futuras ampliaciones del sistema
 
 ---
 
@@ -53,19 +52,14 @@ Los principales objetivos de este proyecto son:
 
 Actualmente, el sistema permite:
 
-- Registrar nuevas películas.
-- Listar todas las películas.
-- Consultar el detalle de una película.
-- Editar información de películas.
-- Eliminar películas.
-- Registrar géneros.
-- Listar géneros disponibles.
-- Consultar el detalle de un género.
-- Editar y eliminar géneros.
-- Relacionar una película con varios géneros.
-- Gestionar películas y géneros desde el panel de administración.
-- Consumir la API desde la interfaz navegable de Django REST Framework.
-- Obtener respuestas en formato JSON.
+- Registrar nuevas películas
+- Listar todas las películas disponibles
+- Consultar el detalle de una película específica
+- Editar información de películas existentes
+- Eliminar registros de películas
+- Gestionar datos desde el panel de administración
+- Consumir la API desde la interfaz navegable de Django REST Framework
+- Obtener respuestas en formato JSON
 
 ---
 
@@ -73,78 +67,60 @@ Actualmente, el sistema permite:
 
 Este proyecto fue desarrollado con las siguientes tecnologías:
 
-- Python
-- Django
-- Django REST Framework
-- SQLite
-- Git
-- GitHub
+- **Python**
+- **Django**
+- **Django REST Framework**
+- **SQLite**
+- **Git**
+- **GitHub**
 
 ---
 
 ## 🖼️ Capturas del proyecto
 
-A continuación, se muestran capturas del funcionamiento del sistema.
+A continuación, se muestran algunas capturas que evidencian el funcionamiento del sistema:
 
-### Panel de administración
+### API Root
+![API Root](docs/incio.png)
 
-![Panel de administración](docs/admin.png)
+### Registro de películas
+![Registro de películas](docs/movie_list_post.png)
 
-### Listado de géneros
-
-![Listado de géneros](docs/genre%20list.png)
-
-### Detalle de género
-
-![Detalle de género](docs/genre%20instance.png)
-
-### Respuesta JSON de géneros
-
-![Respuesta JSON de géneros](docs/genre%20list%20json.png)
+### Edición de películas
+![Edición de películas](docs/movie_delete.png)
 
 ### Listado de películas
+![Listado de películas](docs/movie_list.png)
 
-![Listado de películas](docs/movie%20list.png)
+### Respuesta de la API en formato JSON
+![Respuesta JSON](docs/json.png)
 
-### Detalle de película
-
-![Detalle de película](docs/movie%20instance.png)
-
-### Respuesta JSON de películas
-
-![Respuesta JSON de películas](docs/movie%20list%20json.png)
+### Panel de administración
+![Panel de administración](docs/admin.png)
 
 ---
 
-## 🔗 Endpoints principales
+## 📂 Estructura del proyecto
 
-### Movies
-
-| Método | Endpoint | Descripción |
-|---|---|---|
-| GET | `/api/movies/` | Lista todas las películas |
-| POST | `/api/movies/` | Crea una nueva película |
-| GET | `/api/movies/{id}/` | Muestra el detalle de una película |
-| PUT | `/api/movies/{id}/` | Actualiza una película completa |
-| PATCH | `/api/movies/{id}/` | Actualiza parcialmente una película |
-| DELETE | `/api/movies/{id}/` | Elimina una película |
-
-### Genres
-
-| Método | Endpoint | Descripción |
-|---|---|---|
-| GET | `/api/genres/` | Lista todos los géneros |
-| POST | `/api/genres/` | Crea un nuevo género |
-| GET | `/api/genres/{id}/` | Muestra el detalle de un género |
-| PUT | `/api/genres/{id}/` | Actualiza un género completo |
-| PATCH | `/api/genres/{id}/` | Actualiza parcialmente un género |
-| DELETE | `/api/genres/{id}/` | Elimina un género |
-
----
-
-## 📌 Ejemplo de creación de género
-
-Endpoint:
-
-```http
-POST /api/genres/
+```bash
+Cinespoiler/
+├── .gitignore
+├── manage.py
+├── README.md
+├── requirements.txt
+├── config/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── movies/
+    ├── __init__.py
+    ├── admin.py
+    ├── apps.py
+    ├── migrations/
+    ├── models.py
+    ├── serializers.py
+    ├── tests.py
+    ├── urls.py
+    └── views.py
