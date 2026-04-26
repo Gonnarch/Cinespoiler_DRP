@@ -6,7 +6,7 @@ El proyecto permite administrar películas, registrar géneros cinematográficos
 
 Además, cuenta con el panel administrativo de Django y con la interfaz navegable de Django REST Framework para probar los endpoints de forma visual.
 
-> Proyecto colaborativo **Carlos Carbajal** y **Sarai Soto**
+> Proyecto colaborativo **Carlos Carbajal**, **Sarai Soto** y **Eduardo Quiquia**
 
 ---
 
@@ -171,3 +171,4 @@ Permite actualizar completamente la información de una película.
 Permite consultar la información de una película específica.
 
 ![Detalle de Movie](docs/endpoints/movie%20intace.png)
+
