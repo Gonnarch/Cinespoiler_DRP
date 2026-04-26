@@ -158,14 +158,6 @@ Permite listar las películas registradas.
 
 ---
 
-### 5. Detalle de Movie
-
-Permite consultar la información de una película específica.
-
-![Detalle de Movie](docs/endpoints/movie%20intace.png)
-
----
-
 ### 5. PUT Movie
 
 Permite actualizar completamente la información de una película.
