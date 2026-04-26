@@ -202,6 +202,23 @@ Permite consultar la información de una película específica.
 
 ![Detalle de Movie](docs/endpoints/movie%20intace.png)
 
+### Evidencias de endpoints
+
+### POST Genre
+![POST Genre](docs/endpoints/saraisoto/post%20genre.png)
+
+### POST Movie
+![POST Movie](docs/endpoints/saraisoto/post%20movie.png)
+
+### GET Movies
+![GET Movies](docs/endpoints/saraisoto/get%20movie.png)
+
+### GET Movie detalle
+![GET Movie detalle](docs/endpoints/saraisoto/movie%20instance.png)
+
+### PUT Movie
+![PUT Movie](docs/endpoints/saraisoto/put%20movie.png)
+
 # Eduardo Quiquia - Evidencias
 
 ## Listar peliculas
