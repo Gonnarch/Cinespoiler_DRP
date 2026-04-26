@@ -99,6 +99,35 @@ A continuación, se muestran algunas capturas que evidencian el funcionamiento d
 ![Panel de administración](docs/admin.png)
 
 ---
+## Sarai Soto Lopez
+
+### Panel de administración
+
+![Panel de administración](docs/saraisoto/admin.png)
+
+### Listado de películas
+
+![Listado de películas](docs/saraisoto/movie%20list.png)
+
+### Detalle de película
+
+![Detalle de película](docs/saraisoto/movie%20instance.png)
+
+### Respuesta JSON de películas
+
+![Respuesta JSON de películas](docs/saraisoto/movie%20list%20json.png)
+
+### Listado de géneros
+
+![Listado de géneros](docs/saraisoto/genre%20list.png)
+
+### Detalle de género
+
+![Detalle de género](docs/saraisoto/genre%20instance.png)
+
+### Respuesta JSON de géneros
+
+![Respuesta JSON de géneros](docs/saraisoto/genre%20list%20json.png)
 
 ## 📂 Estructura del proyecto
 
