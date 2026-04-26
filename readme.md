@@ -202,7 +202,7 @@ Permite consultar la información de una película específica.
 
 ![Detalle de Movie](docs/endpoints/movie%20intace.png)
 
-### Evidencias de endpoints
+### Evidencias de endpoints — Sarai Soto Lopez
 
 ### POST Genre
 ![POST Genre](docs/endpoints/saraisoto/post%20genre.png)
