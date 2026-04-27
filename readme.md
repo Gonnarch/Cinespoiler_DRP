@@ -81,6 +81,78 @@ Este proyecto fue desarrollado con las siguientes tecnologías:
 
 ![Respuesta JSON de películas](docs/movie%20list%20json.png)
 
+## Sarai Soto Lopez
+
+### Panel de administración
+
+![Panel de administración](docs/saraisoto/admin.png)
+
+### Listado de películas
+
+![Listado de películas](docs/saraisoto/movie%20list.png)
+
+### Detalle de película
+
+![Detalle de película](docs/saraisoto/movie%20instance.png)
+
+### Respuesta JSON de películas
+
+![Respuesta JSON de películas](docs/saraisoto/movie%20list%20json.png)
+
+### Listado de géneros
+
+![Listado de géneros](docs/saraisoto/genre%20list.png)
+
+### Detalle de género
+
+![Detalle de género](docs/saraisoto/genre%20instance.png)
+
+### Respuesta JSON de géneros
+
+![Respuesta JSON de géneros](docs/saraisoto/genre%20list%20json.png)
+
+---
+
+## **Eduardo Quiquia**
+## 1. Listar peliculas (GET)
+**Ruta:** `GET /api/movies/`
+![GET movie](docs/eduardo/image.png)
+
+## 2. Crear pelicula (POST)
+**Ruta:** `POST /api/movies/`
+![POST movie](docs/eduardo/moviegk.png)
+
+## 3. Actualizar pelicula (PUT)
+**Ruta:** `PUT /api/movies/4`
+![PUT movie](docs/eduardo/updategk.png)
+
+## 4. Eliminar pelicula (DELETE)
+**Ruta:** `DELETE /api/movies/4`
+![DELETE movie](docs/eduardo/deletegk.png)
+
+## 5. Data Base - Movies
+![TABLA MOVIES](docs/eduardo/db_movies.png)
+
+## 6. Listar genres
+**Ruta:** `GET /api/genres/`
+![GET genres](docs/eduardo/genres.png)
+--
+## 7. Crear genres
+**Ruta:** `POST /api/genres/`
+![POST genres](docs/eduardo/genre1.png)
+![POST genres](docs/eduardo/genre2.png)
+
+## 8. Actualizar genre
+**Ruta:** `PUT /api/genres/1`
+![PUT genre](docs/eduardo/genret.png)
+
+## 9. Eliminar genre
+**Ruta:** `DELETE /api/genres/1`
+![DELETE movie](docs/eduardo/genredelete.png)
+
+## 10. Data Base - Genres
+![TABLA GENRES](docs/eduardo/db_genres.png)
+
 ---
 
 ## 🖼️ Evidencias de endpoints
@@ -132,43 +204,3 @@ Permite actualizar completamente la información de una película.
 Permite consultar la información de una película específica.
 
 ![Detalle de Movie](docs/endpoints/movie%20intace.png)
-
-## **Eduardo Quiquia - Evidencias**
-## 1. Listar peliculas (GET)
-**Ruta:** `GET /api/movies/`
-![GET movie](docs/eduardo/image.png)
-
-## 2. Crear pelicula (POST)
-**Ruta:** `POST /api/movies/`
-![POST movie](docs/eduardo/moviegk.png)
-
-## 3. Actualizar pelicula (PUT)
-**Ruta:** `PUT /api/movies/4`
-![PUT movie](docs/eduardo/updategk.png)
-
-## 4. Eliminar pelicula (DELETE)
-**Ruta:** `DELETE /api/movies/4`
-![DELETE movie](docs/eduardo/deletegk.png)
-
-## 5. Data Base - Movies
-![TABLA MOVIES](docs/eduardo/db_movies.png)
-
-## 6. Listar genres
-**Ruta:** `GET /api/genres/`
-![GET genres](docs/eduardo/genres.png)
---
-## 7. Crear genres
-**Ruta:** `POST /api/genres/`
-![POST genres](docs/eduardo/genre1.png)
-![POST genres](docs/eduardo/genre2.png)
-
-## 8. Actualizar genre
-**Ruta:** `PUT /api/genres/1`
-![PUT genre](docs/eduardo/genret.png)
-
-## 9. Eliminar genre
-**Ruta:** `DELETE /api/genres/1`
-![DELETE movie](docs/eduardo/genredelete.png)
-
-## 10. Data Base - Genres
-![TABLA GENRES](docs/eduardo/db_genres.png)
