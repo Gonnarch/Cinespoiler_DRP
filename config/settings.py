@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'movies',
     'users',
     'products',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
@@ -80,8 +81,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cine_db',
+        'USER': 'root',
+        'PASSWORD': 'eduardo40',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -122,4 +127,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
 ]
