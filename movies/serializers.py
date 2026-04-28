@@ -8,6 +8,7 @@ class GenreSerializer(serializers.ModelSerializer):
             "id",
             "name",
         ]
+        read_only_fields = ['id']
 
 
 class MovieSerializer(serializers.ModelSerializer):
@@ -26,11 +27,12 @@ class MovieSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "title",
+            "slug",
             "description",
             "release_date",
             "duration_minutes",
             "image_url",
-            "is_active",
+            "status",
             "genres",
             "genre_ids",
             "created_at",
